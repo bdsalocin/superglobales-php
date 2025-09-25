@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Votre nom est : " . htmlspecialchars($nom) . ". ";
     }
-    echo "\n";
+    echo "<br>";
     $email = trim($_POST['email']);
     if (empty($email)) {
         echo "Veuillez rentrer un email";
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "Email valide : " . htmlspecialchars($email) . ". ";
     }
-    echo "\n";
+    echo "<br>";
     $age = trim($_POST['age']);
     if ($age <= 0) {
         echo "Age invalide, vous n'existez pas";
